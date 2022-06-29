@@ -2,6 +2,8 @@ import React from 'react'
 import {useStateValue} from '../StateProvider'
 import './Checkout.css'
 import CheckoutProducts from '../components/CheckoutProducts'
+import SubTotal from '../components/SubTotal'
+
 function Checkout() {
     const [{basket}]= useStateValue()
   return (
@@ -36,6 +38,9 @@ function Checkout() {
                     </div>
                 )
             }
+            <SubTotal
+                    price            
+            />
     </div>
   )
 }
