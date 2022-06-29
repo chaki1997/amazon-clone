@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import Header from './components/Header'
+import Checkout from './pages/Checkout';
 function App() {
   return (
     <Router>
@@ -14,7 +15,7 @@ function App() {
      {/* localhost.com/ */}
      <Routes>
           <>
-           <Route path="/checkout" element={<><Header/></>}>
+           <Route path="/checkout" element={<><Header/><Checkout/></>}>
 
            
             </Route>

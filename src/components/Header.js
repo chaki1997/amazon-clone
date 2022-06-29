@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './Header.css'
 import { Search, ShoppingBasket } from '@mui/icons-material'
 import { useStateValue } from '../StateProvider'
+
 function Header() {
     const [{basket}]=useStateValue();
     console.log(basket)
